@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-let db = 'mongodb+srv://saravanan:S.shanvi2016@blogapp-eirbd.mongodb.net/blogapp?retryWrites=true'
+let db = ''
 const connectDB = async () => {
     try {
         await mongoose.connect(db, {
