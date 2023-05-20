@@ -1,9 +1,8 @@
 const mongoose = require("mongoose")
 
-let db = ''
 const connectDB = async () => {
     try {
-        await mongoose.connect(db, {
+        mongoose.connect(process.env.MONGOURI, {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true,

@@ -5,6 +5,7 @@ const mongoose = require("mongoose"),
     jwt = require('jsonwebtoken'),
     bcrypt = require('bcrypt'),
     cors = require('cors')
+require('dotenv').config()
 
 // APP CONFIG
 connectDB()
